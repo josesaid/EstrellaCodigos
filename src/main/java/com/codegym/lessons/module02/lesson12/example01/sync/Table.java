@@ -1,4 +1,4 @@
-package com.codegym.lessons.module02.lesson12.sync;
+package com.codegym.lessons.module02.lesson12.example01.sync;
 
 public class Table {
     public synchronized void printTable(int n){//synchronized method
