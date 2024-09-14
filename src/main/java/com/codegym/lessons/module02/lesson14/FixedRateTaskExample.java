@@ -16,9 +16,9 @@ public class FixedRateTaskExample {
             long epoch = Instant.now().toEpochMilli();
             System.out.print("Fixed rate task executed at " + epoch);
             LocalDateTime ldt = Instant.ofEpochMilli(epoch).atZone(ZoneId.systemDefault()).toLocalDateTime();
-            System.out.print("-> " + ldt + "\n");
+            System.out.print(" -> " + ldt + "\n");
 
-        }, 1, 2, TimeUnit.SECONDS);
+        }, 2, 3, TimeUnit.SECONDS);
 
         // Let the main thread sleep for 10 seconds to observe the scheduled task execution
         try {

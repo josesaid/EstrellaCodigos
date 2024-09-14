@@ -6,9 +6,9 @@ import java.util.concurrent.TimeUnit;
 
 public class FixedThreadPoolDemo {
     public static void main(String[] args) {
-        ExecutorService executorService = Executors.newFixedThreadPool(3);
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
 
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 7; i++) {
             Task task = new Task("Task " + i);
             executorService.submit(task);
         }
